@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#f5f3ed">
+  <title>PinguBuy spreadsheet – dansk guide til sko, tøj og QC</title>
+  <meta name="description" content="Brug denne danske PinguBuy spreadsheet-guide til at finde kategorier hos CAFANS, vælge størrelse, læse QC-billeder og afklare fragt til Danmark.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:title" content="PinguBuy spreadsheet – dansk guide til sko, tøj og QC">
+  <meta property="og:description" content="Find varekategorier hos CAFANS, og brug den danske tjekliste til størrelse, kvalitetsbilleder og fragt.">
+  <link rel="preconnect" href="https://static.nike.com">
+  <!-- index.html. Emnevalg bygger på tilgængelige søgeresultater. Bings første ti placeringer kunne ikke verificeres. Tilføj sidens egen canonical-URL, når udgivelsesadressen er kendt. -->
+  <style>
+    :root{color-scheme:light;--bg:#f5f3ed;--paper:#fff;--ink:#202820;--soft:#4c5a51;--rule:#cdd3c9;--green:#244838;--lime:#e5edb8}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font:1rem/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+    .wrap{width:min(1120px,calc(100% - 2rem));margin-inline:auto}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.13;overflow-wrap:anywhere}
+    h1{font-size:clamp(2.3rem,6vw,5.1rem);letter-spacing:-.065em;max-width:12ch}
+    h2{font-size:clamp(1.65rem,3.6vw,2.5rem);letter-spacing:-.04em}
+    h3{font-size:1.2rem}
+    p{max-width:67ch}
+    a{color:var(--green);text-underline-offset:.2em}
+    :focus-visible{outline:3px solid #176459;outline-offset:4px}
+    header{border-bottom:1px solid var(--rule);padding-block:.8rem}
+    header .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+    .home{font-weight:850;letter-spacing:.13em;text-decoration:none}
+    .hero{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(1rem,4vw,3rem);align-items:center;padding-block:clamp(1.4rem,4vw,3.4rem)}
+    .hero p{margin-block:1rem;color:var(--soft)}
+    .button{display:inline-block;padding:.65rem 1rem;background:var(--green);color:#fff;border-radius:.35rem;font-weight:750;text-decoration:none}
+    figure{min-width:0}
+    img{display:block;width:100%;height:auto;background:#eeefe9;object-fit:contain}
+    .hero img{aspect-ratio:4/3;max-height:305px;border-radius:.6rem}
+    figcaption{padding:.35rem .1rem;color:var(--soft);font-size:.82rem}
+    section{margin-block:0 2.6rem}
+    section>p{margin-top:.6rem;color:var(--soft)}
+    .categories,.gallery,.topics{display:grid;gap:.6rem}
+    .categories{list-style:none;padding:0;margin:1rem 0 0;grid-template-columns:repeat(5,minmax(0,1fr))}
+    .categories a{display:flex;height:100%;align-items:center;min-height:3rem;padding:.5rem .7rem;background:var(--paper);border:1px solid var(--rule);border-radius:.35rem;font-weight:650;text-decoration:none;overflow-wrap:anywhere}
+    .categories a:hover,.button:hover{background:var(--lime);color:var(--ink)}
+    .gallery{grid-template-columns:repeat(5,minmax(0,1fr));margin-top:1rem}
+    .gallery img{aspect-ratio:1;border-radius:.35rem}
+    .topics{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:1rem}
+    article{padding:1.1rem;background:var(--paper);border-top:3px solid var(--green)}
+    article p{margin-top:.6rem}
+    .steps{padding-left:1.4rem;max-width:72ch}
+    .steps li+li{margin-top:.45rem}
+    details{padding:.8rem 0;border-bottom:1px solid var(--rule)}
+    summary{cursor:pointer;font-weight:700}
+    details p{margin:.45rem 0 0 1.1rem}
+    footer{border-top:1px solid var(--rule);padding-block:1rem 1.8rem;color:var(--soft)}
+    @media(max-width:740px){.categories{grid-template-columns:repeat(3,minmax(0,1fr))}.gallery{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media(max-width:520px){.hero,.topics{grid-template-columns:1fr}.hero img{max-height:215px}.categories,.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "da",
+    "name": "PinguBuy spreadsheet – dansk guide til sko, tøj og QC",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Hvad er et PinguBuy spreadsheet?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Det er typisk en produktoversigt med links, kategorier og eventuelt oplysninger om varianter eller kvalitetskontrol."}
+      },
+      {
+        "@type": "Question",
+        "name": "Hvor fører produktkategorierne hen?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Kategorierne fører til CAFANS. Se den enkelte varebeskrivelse for tilgængelige størrelser og varianter."}
+      },
+      {
+        "@type": "Question",
+        "name": "Kan QC-billeder bruges som ægthedsbevis?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Nej. Billederne kan vise synlige detaljer og fejl. Bed om dokumentation for varens oprindelse, hvis ægthed er afgørende."}
+      },
+      {
+        "@type": "Question",
+        "name": "Hvad skal jeg afklare om fragt til Danmark?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Bed om et samlet beløb eller et overslag, og få oplyst, hvilke fragtomkostninger, gebyrer, moms og eventuel told det omfatter."}
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/zmlco/">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="home" href="https://www.cafans.com">CAFANS</a>
+      <span>Dansk indkøbsguide</span>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <div>
+        <h1>PinguBuy spreadsheet</h1>
+        <p>Et PinguBuy spreadsheet er typisk en oversigt over produktlinks. Brug den danske guide til at finde kategorier hos CAFANS og afklare størrelse, kvalitetsbilleder og fragt, inden du vælger en vare.</p>
+        <a class="button" href="https://www.cafans.com">Se kataloget hos CAFANS</a>
+      </div>
+      <figure>
+        <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto%2Cq_auto%3Aeco%2Cc_scale%2Cw_300%2Cu_9ddf04c7-2a9a-4d76-add1-d15af8f0263d%2Cc_scale%2Cfl_relative%2Cw_1.0%2Ch_1.0%2Cfl_layer_apply/f888b4a3-a02a-420d-93e3-cb33c3bb30ac/AIR%2BFORCE%2B1%2B%2707.png" width="400" height="300" alt="Hvid Nike Air Force 1 ’07 Texture set fra siden" fetchpriority="high" loading="eager" decoding="async">
+        <figcaption>Stilinspiration · Nike Air Force 1 ’07 Texture</figcaption>
+      </figure>
+    </div>
+
+    <section aria-labelledby="categories">
+      <h2 id="categories">Find din varekategori</h2>
+      <p>Start med den varetype, du leder efter. Alle kategorier åbner hos CAFANS.</p>
+      <nav aria-label="Varekategorier hos CAFANS">
+        <ul class="categories">
+          <li><a href="https://cafans.com/category-911-Shoes.html">Sko</a></li>
+          <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Hættetrøjer og sweatere</a></li>
+          <li><a href="https://cafans.com/category-913-T-Shirts.html">T-shirts</a></li>
+          <li><a href="https://cafans.com/category-914-Jackets.html">Jakker</a></li>
+          <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Bukser og shorts</a></li>
+          <li><a href="https://cafans.com/category-916-Headwear.html">Hovedbeklædning</a></li>
+          <li><a href="https://cafans.com/category-917-Sets.html">Tøjsæt</a></li>
+          <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Undertøj og underbukser</a></li>
+          <li><a href="https://cafans.com/category-919-Jersey.html">Sportstrøjer</a></li>
+          <li><a href="https://cafans.com/category-920-Accessories.html">Tilbehør</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section aria-labelledby="inspiration">
+      <h2 id="inspiration">Stilinspiration til tøj og tilbehør</h2>
+      <p>Billederne viser eksempler på modeller og materialer. Se kataloget for det aktuelle udvalg.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://contents.mediadecathlon.com/m23962554/k%2428901ee096db12c1acb40a7510f1251e/picture.jpg?f=320x0&amp;format=auto" width="320" height="320" alt="Sort Nike Club Fleece-hættetrøje med kængurulomme" loading="lazy" decoding="async">
+          <figcaption>Nike Club Fleece</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" alt="Beige og brun Gucci-kasket i GG-mønstret kanvas" loading="lazy" decoding="async">
+          <figcaption>Gucci GG-kasket</figcaption>
+        </figure>
+        <figure>
+          <img src="https://jp.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-essential-cap--M77590_PM2_Front%20view.png?hei=320&amp;wid=320" width="320" height="320" alt="Blå Louis Vuitton-kasket med monogram og buet skygge" loading="lazy" decoding="async">
+          <figcaption>Louis Vuitton Monogram Essential</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.hermes.com/is/image/hermesproduct/bracelet-clic-h--700001F%204P-front-1-300-0-1000-1000_b.jpg?wid=320" width="320" height="320" alt="Hermès Clic H-armring med emalje og H-formet lukning" loading="lazy" decoding="async">
+          <figcaption>Hermès Clic H</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/B1446HOMMTD000_E06?%24default_GHC%24=&amp;bfc=on&amp;crop=424%2C159%2C1122%2C1281&amp;wid=320&amp;qlt=75" width="320" height="320" alt="Sølvfarvet Dior CD Icon-armbånd med smalle kædeled" loading="lazy" decoding="async">
+          <figcaption>Dior CD Icon</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-labelledby="guides">
+      <h2 id="guides">Fire guider til dit næste køb</h2>
+      <div class="topics">
+        <article>
+          <h3>PinguBuy finds og produktlinks</h3>
+          <p>Når du finder en vare i en produktliste, så åbn linket og tjek, om modelnavn, varenummer og farve stadig passer. Notér den valgte variant. Hvis et produktlink er udløbet, kan du bruge varenummeret til at søge efter samme model igen.</p>
+          <p>Ved sammenligning af sælgere bør du kontrollere billeder af den konkrete variant, hvad der følger med, og hvilke returvilkår der gælder.</p>
+        </article>
+        <article>
+          <h3>Sneakers og størrelsesguide til tøj</h3>
+          <p>Brug butikkens størrelsestabel til sneakers. Mål begge fødder stående, brug længden på den længste fod, og tjek, om tabellen angiver fodlængde eller indersålens længde.</p>
+          <p>Ved valg af hættetrøje kan du måle brystbredde og ærmelængde på en trøje, der passer. Sammenlign taljemål og benlængde for bukser, hovedomkreds for kasketter og indvendig omkreds for armbånd.</p>
+        </article>
+        <article>
+          <h3>QC-billeder og kvalitetskontrol</h3>
+          <p>Brug kvalitetsbilleder, også kaldet QC-billeder, til at sammenligne den valgte model, størrelse og farve med ordren. Bed om billeder i neutralt lys, når farven er vigtig.</p>
+          <p>Ved kontrol af sneakers er såler, tåparti og hæle gode steder at sammenligne højre og venstre sko. På jakker er det værd at se sømme, lynlås og mærkater tæt på. Tjek låsen og eventuelle ridser på smykker.</p>
+        </article>
+        <article>
+          <h3>Fragt til Danmark og samlet pris</h3>
+          <p>Notér varepris, valuta og eventuel indenrigsfragt. Bed om et overslag på international levering, og få afklaret, hvordan pakkens vægt og mål påvirker fragtprisen.</p>
+          <p>Hvis du samler flere varer i én pakke, så spørg om lagerfrist, konsolidering og mulige gebyrer. Tjek betalingsbeløbet i DKK, og få afklaret moms, eventuel told og returfragt, før du betaler.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="checklist">
+      <h2 id="checklist">Tjekliste før bestilling</h2>
+      <ol class="steps">
+        <li>Gem produktlink, varenummer, størrelse og farve samlet.</li>
+        <li>Sammenlign målene med et produkt, du allerede bruger.</li>
+        <li>Afklar mulighederne for QC-billeder samt fristen for en eventuel retur.</li>
+        <li>Gennemgå det forventede totalbeløb og leveringsvilkårene for din adresse.</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="faq">
+      <h2 id="faq">Ofte stillede spørgsmål</h2>
+      <details>
+        <summary>Hvad er et PinguBuy spreadsheet?</summary>
+        <p>Det er typisk en produktoversigt med links, kategorier og eventuelt oplysninger om varianter eller kvalitetskontrol.</p>
+      </details>
+      <details>
+        <summary>Hvor fører produktkategorierne hen?</summary>
+        <p>Kategorierne fører til CAFANS. Se den enkelte varebeskrivelse for tilgængelige størrelser og varianter.</p>
+      </details>
+      <details>
+        <summary>Kan QC-billeder bruges som ægthedsbevis?</summary>
+        <p>Nej. Billederne kan vise synlige detaljer og fejl. Bed om dokumentation for varens oprindelse, hvis ægthed er afgørende.</p>
+      </details>
+      <details>
+        <summary>Hvad skal jeg afklare om fragt til Danmark?</summary>
+        <p>Bed om et samlet beløb eller et overslag, og få oplyst, hvilke fragtomkostninger, gebyrer, moms og eventuel told det omfatter.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Uafhængig guide med henvisninger til <a href="https://www.cafans.com">CAFANS</a>. Mærkenavne identificerer de viste modeller.</p>
+    </div>
+  </footer>
+</body>
+</html>
